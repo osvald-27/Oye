@@ -1,2 +1,9 @@
-idf_component_register(SRCS "oye_node.c"
-                    INCLUDE_DIRS ".")
+idf_component_register(
+    SRCS "oye_node.c"
+    INCLUDE_DIRS "."
+    PRIV_REQUIRES
+        esp_hw_support
+        esp_system
+        freertos
+        log
+)
